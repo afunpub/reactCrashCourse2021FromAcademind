@@ -2,6 +2,8 @@ import Card from "../ui/Card";
 import classes from "./MeetupItem.module.css";
 
 function MeetupItem(props) {
+  function toggleFavoriteStatusHandler() {}
+
   return (
     <li className={classes.item}>
       <Card>
@@ -14,7 +16,7 @@ function MeetupItem(props) {
           <p>{props.description}</p>
         </div>
         <div className={classes.actions}>
-          <button>To Favorite</button>
+          <button onClick={toggleFavoriteStatusHandler}>To Favorite</button>
         </div>
       </Card>
     </li>
